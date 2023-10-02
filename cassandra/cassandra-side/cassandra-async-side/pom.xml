@@ -28,7 +28,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>3.5.2</version>
+            <version>4.2.6</version>
         </dependency>
 
         <dependency>
@@ -88,12 +88,11 @@
                             <tasks>
                                 <copy todir="${basedir}/../../../sqlplugins/cassandraasyncside">
                                     <fileset dir="target/">
-                                        <include name="${project.artifactId}-${project.version}.jar" />
+                                        <include name="${project.artifactId}-${project.version}.jar"/>
                                     </fileset>
                                 </copy>
 
-                                <move file="${basedir}/../../../sqlplugins/cassandraasyncside/${project.artifactId}-${project.version}.jar"
-                                      tofile="${basedir}/../../../sqlplugins/cassandraasyncside/${project.name}-${git.branch}.jar" />
+                                <move file="${basedir}/../../../sqlplugins/cassandraasyncside/${project.artifactId}-${project.version}.jar" tofile="${basedir}/../../../sqlplugins/cassandraasyncside/${project.name}-${git.branch}.jar"/>
                             </tasks>
                         </configuration>
                     </execution>
