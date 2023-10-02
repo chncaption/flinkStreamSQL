@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
-            <version>1.6.1</version>
+            <version>1.7.34</version>
         </dependency>
 
         <dependency>
@@ -107,12 +107,11 @@
                             <tasks>
                                 <copy todir="${basedir}/../../sqlplugins/elasticsearch-xhsink">
                                     <fileset dir="target/">
-                                        <include name="${project.artifactId}-${project.version}.jar" />
+                                        <include name="${project.artifactId}-${project.version}.jar"/>
                                     </fileset>
                                 </copy>
 
-                                <move file="${basedir}/../../sqlplugins/elasticsearch-xhsink/${project.artifactId}-${project.version}.jar"
-                                      tofile="${basedir}/../../sqlplugins/elasticsearch-xhsink/${project.name}-${git.branch}.jar" />
+                                <move file="${basedir}/../../sqlplugins/elasticsearch-xhsink/${project.artifactId}-${project.version}.jar" tofile="${basedir}/../../sqlplugins/elasticsearch-xhsink/${project.name}-${git.branch}.jar"/>
                             </tasks>
                         </configuration>
                     </execution>
