@@ -41,7 +41,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
-            <version>1.6.1</version>
+            <version>1.7.34</version>
         </dependency>
 
 
@@ -125,13 +125,10 @@
                                     </fileset>
                                 </copy>
 
-                                <move file="${basedir}/../../sqlplugins/elasticsearch7sink/${project.artifactId}-${project.version}.jar"
-                                      tofile="${basedir}/../../sqlplugins/elasticsearch7sink/${project.name}-${git.branch}.jar"/>
+                                <move file="${basedir}/../../sqlplugins/elasticsearch7sink/${project.artifactId}-${project.version}.jar" tofile="${basedir}/../../sqlplugins/elasticsearch7sink/${project.name}-${git.branch}.jar"/>
 
                                 <delete>
-                                    <fileset dir="${basedir}/../../sqlplugins/elasticsearch7sink"
-                                             includes="${project.name}-*.jar"
-                                             excludes="${project.name}-${git.branch}.jar"/>
+                                    <fileset dir="${basedir}/../../sqlplugins/elasticsearch7sink" includes="${project.name}-*.jar" excludes="${project.name}-${git.branch}.jar"/>
                                 </delete>
                             </tasks>
                         </configuration>
