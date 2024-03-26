@@ -29,7 +29,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>3.5.2</version>
+            <version>4.5.6</version>
         </dependency>
 
 
@@ -94,8 +94,7 @@
                                     </fileset>
                                 </copy>
 
-                                <move file="${basedir}/../../../sqlplugins/kuduasyncside/${project.artifactId}-${project.version}.jar"
-                                      tofile="${basedir}/../../../sqlplugins/kuduasyncside/${project.name}-${git.branch}.jar"/>
+                                <move file="${basedir}/../../../sqlplugins/kuduasyncside/${project.artifactId}-${project.version}.jar" tofile="${basedir}/../../../sqlplugins/kuduasyncside/${project.name}-${git.branch}.jar"/>
                             </tasks>
                         </configuration>
                     </execution>
