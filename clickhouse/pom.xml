@@ -20,7 +20,7 @@
 
     <properties>
         <sql.core.version>1.0-SNAPSHOT</sql.core.version>
-        <clickhouse.jdbc.version>0.1.55</clickhouse.jdbc.version>
+        <clickhouse.jdbc.version>0.3.2</clickhouse.jdbc.version>
     </properties>
 
     <dependencies>
