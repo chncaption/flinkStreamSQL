@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <elasticsearch.version>5.3.3</elasticsearch.version>
+        <elasticsearch.version>7.17.23</elasticsearch.version>
     </properties>
 
     <modules>
