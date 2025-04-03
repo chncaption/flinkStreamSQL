@@ -69,7 +69,7 @@
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <version>1.10</version>
+            <version>1.14</version>
         </dependency>
 
         <dependency>
@@ -173,12 +173,11 @@
                             <tasks>
                                 <copy todir="${basedir}/../sqlplugins">
                                     <fileset dir="target/">
-                                        <include name="${project.artifactId}-${project.version}.jar" />
+                                        <include name="${project.artifactId}-${project.version}.jar"/>
                                     </fileset>
                                 </copy>
                                 <!--suppress UnresolvedMavenProperty -->
-                                <move file="${basedir}/../sqlplugins/${project.artifactId}-${project.version}.jar"
-                                      tofile="${basedir}/../sqlplugins/${project.name}-${git.branch}.jar" />
+                                <move file="${basedir}/../sqlplugins/${project.artifactId}-${project.version}.jar" tofile="${basedir}/../sqlplugins/${project.name}-${git.branch}.jar"/>
                             </tasks>
                         </configuration>
                     </execution>
